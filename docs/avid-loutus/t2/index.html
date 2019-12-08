@@ -17,6 +17,8 @@
 </head>
 <body>
 
+<div id="loading"></div>
+
 <div class="main-container">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white sticky-top">
@@ -419,5 +421,17 @@
 <script src="../../resources/frameworks/jquery-3.4.1.min.js"></script>
 <script src="../../resources/frameworks/popper.min.js"></script>
 <script src="../../resources/frameworks/bootstrap-4.2.1/js/bootstrap.min.js"></script>
+
+<script>
+
+    window.addEventListener('load', function (e) {
+        document.querySelector('#loading').remove();
+        /*var landingContent = document.querySelector("#landing-content");
+        landingContent.classList.add('animated');
+        landingContent.classList.add('fadeInDown');*/
+    });
+
+
+</script>
 </body>
 </html>
