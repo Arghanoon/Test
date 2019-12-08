@@ -1,0 +1,91 @@
+[class*="aspect-"] {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+[class*="aspect-"] > * {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+[class*="aspect-"] img.fill {
+    object-fit: cover;
+    object-position: center;
+}
+
+.aspect-100 {
+    padding-top: 100%;
+}
+
+.aspect-70 {
+    padding-top: 70%;
+}
+
+.aspect-50 {
+    padding-top: 50%;
+}
+
+.aspect-30 {
+    padding-top: 30%;
+}
+
+.un-decorated {
+    text-decoration: none !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-no-wrap {
+    white-space: nowrap;
+}
+
+.img-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-fill {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.text-last-center {
+    text-align-last: center;
+}
+
+.abs-fill{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+.hover-filter-grayscale{
+    transition:1s ease;
+    filter:none;
+}
+
+.hover-filter-grayscale:hover{
+    filter: grayscale(50%);
+}

@@ -1,0 +1,67 @@
+body {
+    direction: rtl;
+    font-family: PrIransans;
+    font-size: 10pt;
+}
+
+h1, .h1 {
+    font-size: 22pt;
+}
+
+h2, .h2 {
+    font-size: 20pt;
+}
+
+h3, .h3 {
+    font-size: 18pt;
+}
+
+h4, .h4 {
+    font-size: 16pt;
+}
+
+h5, .h5 {
+    font-size: 14pt;
+}
+
+h6, .h6 {
+    font-size: 12pt;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#intro-jumbotron {
+
+}
+
+#intro-jumbotron-caption {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent);
+    text-shadow: 0 0 3px black, 0 0 2px white,
+    0 0 1px black, 1px 1px 1px black, -1px -1px 1px black;
+    color: white;
+}
+
+#footer {
+    background: linear-gradient(30deg, #88c540, #3f923b, #006838);
+    padding: 2rem;
+    color: white;
+rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem !important;
+}
+
+@media (orientation: landscape) {
+
+    #intro-jumbotron {
+        height: 50vh;
+    }
+
+}
+
+@media (orientation: portrait) {
+    #intro-jumbotron {
+        height: 70vh;
+    }
+}

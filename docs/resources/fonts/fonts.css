@@ -1,0 +1,18 @@
+@font-face {
+    font-family: PrSamim;
+    src: url('Samim.eot');
+    src: url('Samim.eot?#iefix') format('embedded-opentype'),
+    url('Samim.woff') format('woff'), url('Samim.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'PrIransans';
+    src: url('IRANSANS.TTF');
+}
+
+@font-face {
+    font-family: 'PrBNazanin';
+    src: url('BNazanin.ttf');
+}

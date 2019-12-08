@@ -1,0 +1,98 @@
+:root {
+    --color-green-1: #ccff66;
+    --color-green-2: #99ff33;
+}
+
+body {
+    direction: rtl;
+    font-family: PrIransans;
+    font-size: 10pt;
+}
+
+h1 {
+    font-size: 2.1rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+h6 {
+    font-size: 1.1rem;
+}
+
+img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999999999999999;
+    background: linear-gradient(30deg, #8dc63f, #5da63d, #4c9b3c, #006838);
+}
+
+#landing {
+    position: relative !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+
+#landing-content-background {
+    /*background: linear-gradient(30deg, transparent 40%, rgba(141, 198, 63,0.8));*/
+    background: linear-gradient(30deg, transparent 40%, rgba(0, 0, 0, 0.8));
+    text-shadow: 0 0 2px black
+}
+
+#footer {
+    background: linear-gradient(30deg, #88c540, #3f923b, #006838);
+    padding: 2rem;
+    color: white;
+rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem !important;
+}
+
+
+.fix-background {
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+.text-green-1 {
+    color: var(--color-green-1);
+}
+
+.border-green-1 {
+    border-color: var(--color-green-1) !important;
+}
+
+.text-green-2 {
+    color: var(--color-green-2);
+}
+
+.border-green-2 {
+    border-color: var(--color-green-2) !important;
+}
+
+.bg-white-50 {
+    background: rgba(255, 255, 255, 0.5);
+}
