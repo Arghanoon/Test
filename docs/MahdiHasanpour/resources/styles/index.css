@@ -1,0 +1,59 @@
+body {
+    font-family: PrIransans;
+    font-size: 10pt;
+    direction: rtl;
+}
+
+h1, .h1 {
+    font-size: 24pt;
+}
+
+h2, .h2 {
+    font-size: 22pt;
+}
+
+h3, .h3 {
+    font-size: 20pt;
+}
+
+h4, .h4 {
+    font-size: 18pt;
+}
+
+h5, .h5 {
+    font-size: 14pt;
+}
+
+h6, .h6 {
+    font-size: 12pt;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#landing {
+    position: relative !important;
+    min-height: 100vh;
+    background: url("../images/b3.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+#main-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    color: white;
+
+}
+
+hr.colorful {
+    border: none;
+    height: 2px;
+    background: linear-gradient(30deg, #ff00cc, #99ff00, #6633cc, #3333ff);
+}
+
