@@ -23,6 +23,15 @@
 </head>
 <body>
 
+<div id="loading" class="d-flex justify-content-center align-items-center">
+
+    <div class="text-white-50 text-center">
+        <h3>درحال بارگذاری</h3>
+        <span class="fa fa-spinner fa-spin fa-3x"></span>
+    </div>
+
+</div>
+
 <div id="landing" class="d-flex flex-column">
 
     <nav id="landing-navbar" class="navbar navbar-expand-lg navbar-dark">
@@ -40,7 +49,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">معرفی</a>
+                    <a class="nav-link" href="#about-me-content">معرفی</a>
                 </li>
 
                 <li class="nav-item">
@@ -191,7 +200,9 @@
 <script src="resources/frameworks/popper.min.js"></script>
 <script src="resources/frameworks/bootstrap-4.2.1/js/bootstrap.min.js"></script>
 <script>
-
+window.addEventListener('load',function(){
+    document.querySelector('#loading').remove();
+})
 </script>
 </body>
 </html>
