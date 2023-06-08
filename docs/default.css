@@ -1,0 +1,28 @@
+:root {
+    --title-color: #B15A00;
+    --main-color: #5E5E5E;
+}
+
+@font-face {
+    font-family: 'font';
+    src: url('font-regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'font';
+    src: url('font-bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    color: var(--main-color);
+    font-family: 'font';
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    color: var(--title-color);
+}
