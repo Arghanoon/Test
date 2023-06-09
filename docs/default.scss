@@ -87,9 +87,13 @@ h6, .h6 {
     }
 
     summary {
-      font-weight: bolder;
-      font-size: 1.05em;
+
       color: #4f2800;
+
+      .title {
+        font-weight: bolder;
+        font-size: 1.05em;
+      }
     }
 
     .technologies {
