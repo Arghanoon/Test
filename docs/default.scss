@@ -21,6 +21,8 @@ body {
   color: var(--main-color);
   font-family: 'font';
   font-size: 13px;
+  background: linear-gradient(#fffffff5, #fffffff5), url('/images/background.avif') fixed;
+  background-size: auto, 500px;
 }
 
 h1, h2, h3, h4, h5, h6,
