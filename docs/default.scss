@@ -81,6 +81,11 @@ h6, .h6 {
     margin-block: .80em;
     box-shadow: 0 0 .7em 0 #00000034;
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     summary {
       font-weight: bolder;
       font-size: 1.05em;
