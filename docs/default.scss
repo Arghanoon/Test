@@ -71,3 +71,36 @@ h6, .h6 {
 .fw-bolder {
   color: #8a4600;
 }
+
+.experiences-container {
+  details {
+    background: white;
+    border-radius: .3em;
+    border: thin solid lightgray;
+    padding: .7em;
+    margin-block: .80em;
+    box-shadow: 0 0 1.5em 0 #00000034;
+
+    summary {
+      font-weight: bolder;
+      font-size: 1.05em;
+      color: #4f2800;
+    }
+
+    .technologies {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: .8em;
+      justify-content: center;
+
+      > * {
+        text-align: center;
+        padding: .5em;
+        background: #4f2800;
+        color: white;
+        border-radius: .5em;
+        margin: .3em;
+      }
+    }
+  }
+}
