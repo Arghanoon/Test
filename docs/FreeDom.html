@@ -17,9 +17,23 @@
             text-shadow: 0 0 2px #00000098, 0 0 4px #ff4500;
         }
 
+        .remain {
+            font-size: 5rem;
+            font-weight: bolder;
+            color: #ff4500;
+            min-width: 120px;
+            margin-inline: .5rem;
+        }
+
         @media (max-width: 570px ) {
             .weeks, .weeks-days {
                 font-size: 5rem;
+            }
+
+
+            .remain {
+                font-size: 2rem;
+                min-width: auto;
             }
         }
     </style>
@@ -41,6 +55,17 @@
             <div style="" class="weeks-days"></div>
             <div class="mx-2">Days</div>
         </div>
+    </div>
+
+    <div class="mt-5 d-flex flex-wrap align-items-end justify-content-center">
+        <div style="" class="remain days"></div>
+        <div class="mx-2">Days and</div>
+        <div style="" class="remain hours"></div>
+        <div class="mx-2">hours and</div>
+        <div style="" class="remain minutes"></div>
+        <div class="mx-2">minutes and</div>
+        <div style="" class="remain seconds"></div>
+        <div class="mx-2">seconds</div>
     </div>
 </div>
 
@@ -64,6 +89,27 @@
     document.querySelectorAll('.weeks').forEach(x => x.innerText = weeks.weeks)
     document.querySelectorAll('.weeks-days').forEach(x => x.innerText = weeks.days)
 
+    function CalculateDuration(freedom) {
+        let seconds = (freedom - Date.now()) / 1000;
+        /* const month = Math.floor(seconds / (60 * 60 * 24 * 30));
+         seconds %= (60 * 60 * 24 * 30);*/
+        const days = Math.floor(seconds / (60 * 60 * 24))
+        seconds %= (60 * 60 * 24);
+        const hours = Math.floor(seconds / (60 * 60))
+        seconds %= (60 * 60);
+        const minutes = Math.floor(seconds / (60))
+        seconds = Math.floor(seconds % 60);
+
+        document.querySelectorAll('.days').forEach(x => x.innerText = days)
+        document.querySelectorAll('.hours').forEach(x => x.innerText = hours)
+        document.querySelectorAll('.minutes').forEach(x => x.innerText = minutes)
+        document.querySelectorAll('.seconds').forEach(x => x.innerText = seconds)
+        return {days, hours, minutes, seconds}
+    }
+
+    setInterval(() => {
+        CalculateDuration(freedom);
+    }, 1000)
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
