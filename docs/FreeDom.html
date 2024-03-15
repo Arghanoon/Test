@@ -14,7 +14,13 @@
         .weeks, .weeks-days {
             color: #7cfc00;
             font-size: 12rem;
-            text-shadow: 0 0 2px #00000098,0 0 4px #ff4500;
+            text-shadow: 0 0 2px #00000098, 0 0 4px #ff4500;
+        }
+
+        @media (max-width: 570px ) {
+            .weeks, .weeks-days {
+                font-size: 5rem;
+            }
         }
     </style>
 </head>
@@ -31,7 +37,7 @@
         <div class="h1 fw-bolder">Weeks:</div>
         <div class="mt-4 d-flex align-items-end justify-content-center">
             <div style="" class="weeks"></div>
-            <div class="mx-2">Weeks and </div>
+            <div class="mx-2">Weeks and</div>
             <div style="" class="weeks-days"></div>
             <div class="mx-2">Days</div>
         </div>
