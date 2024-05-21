@@ -24,13 +24,22 @@
             font-family: 'font', Arial;
         }
 
+        table {
+            width: 100%
+        }
+
         th {
             font-size: 1rem;
             font-weight: bold;
         }
 
+        td {
+            border: thin solid;
+        }
+
         input {
             width: 100%;
+            text-align: center;
         }
 
         @media print {
@@ -46,7 +55,7 @@
     <div class="text-center">
         <div>لوازم التحریر</div>
         <h1>ماهک</h1>
-        <table class="table">
+        <table>
             <thead>
             <tr>
                 <th>ردیف</th>
@@ -59,16 +68,18 @@
             <tbody v-if="items">
             <tr v-for="(x,k) in items">
                 <td>{{k + 1}}</td>
-                <td><input type="text" v-model="x.title"/></td>
-                <td><input type="tel" v-model="x.price"/></td>
+                <td><input type="text" v-model="x.title" class="text-start"/></td>
                 <td><input type="tel" v-model="x.count"/></td>
-                <td>{{thousandSeparator(Math.ceil((x.price || 0) * (x.count || 0)))}}</td>
+                <td><input type="tel" v-model="x.price"/></td>
+                <td>{{thousandSeparator(Math.ceil((x.price || 0) * (x.count || 1)))}}</td>
             </tr>
             </tbody>
             <tfoot>
             <tr class="border-top">
                 <th colspan="4" class="text-start">مجموع</th>
-                <td>{{thousandSeparator(items.reduce((p, c) => p + Math.ceil(c.count * c.price)) || 0)}}</td>
+                <td>
+                    {{thousandSeparator(items.reduce((p, c) => p + Math.ceil((c.count || 1) * (c.price || 0)), 0) || 0)}}
+                </td>
             </tr>
             </tfoot>
         </table>
@@ -92,14 +103,14 @@
     function onVueLoad() {
         const app = Vue.createApp({
             data: () => ({
-                items: [{}]
+                items: [{count: 1}]
             }),
             methods: {
                 addNewItem() {
-                    this.items.push({});
+                    this.items.push({count: 1});
                 },
                 thousandSeparator(input) {
-                    return input;
+                    return input.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 }
             }
         });
