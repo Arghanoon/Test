@@ -66,7 +66,7 @@
             </thead>
             <tbody v-if="items">
             <tr v-for="(x,k) in items">
-                <td>{{k + 1}}</td>
+                <td @dblclick="removeItem(k)">{{k + 1}}</td>
                 <template v-if="mode === 'form'">
                     <td><input type="text" v-model="x.title" class="text-start"/></td>
                     <td><input type="tel" v-model="x.count"/></td>
@@ -148,6 +148,11 @@
                     a.href = URL.createObjectURL(blob);
                     a.download = Date.now() + '.json';
                     a.click();
+                },
+                removeItem(k) {
+                    if (this.mode === 'form' && confirm('از حذف اطمینان دارید؟')) {
+                        this.items.splice(k, 1);
+                    }
                 }
             }
         });
