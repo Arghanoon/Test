@@ -98,6 +98,9 @@
             <button class="btn btn-warning ms-2" @click="mode = 'print'">
                 چاپ
             </button>
+            <button class="btn btn-success ms-2" @click="saveForm">
+                ذخیره فرم
+            </button>
         </div>
         <hr/>
         <div class="mt-4 text-center">
@@ -122,6 +125,13 @@
                 },
                 thousandSeparator(input) {
                     return (input || '0').toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                },
+                saveForm() {
+                    const blob = new Blob([JSON.stringify(this.items)], {type: 'application/json'});
+                    const a = document.createElement('a');
+                    a.href = URL.createObjectURL(blob);
+                    a.download = Date.now() + '.json';
+                    a.click();
                 }
             }
         });
