@@ -68,14 +68,21 @@
             <tbody v-if="items">
             <tr v-for="(x,k) in items">
                 <td>{{k + 1}}</td>
-                <td><input type="text" v-model="x.title" class="text-start"/></td>
-                <td><input type="tel" v-model="x.count"/></td>
-                <td><input type="tel" v-model="x.price"/></td>
+                <template v-if="mode === 'form'">
+                    <td><input type="text" v-model="x.title" class="text-start"/></td>
+                    <td><input type="tel" v-model="x.count"/></td>
+                    <td><input type="tel" v-model="x.price"/></td>
+                </template>
+                <template v-if="mode === 'print'">
+                    <td>{{x.title}}</td>
+                    <td>{{thousandSeparator(x.count)}}</td>
+                    <td>{{thousandSeparator(x.price)}}</td>
+                </template>
                 <td>{{thousandSeparator(Math.ceil((x.price || 0) * (x.count || 1)))}}</td>
             </tr>
             </tbody>
             <tfoot>
-            <tr class="border-top">
+            <tr class="border-top" @click="mode = 'form'">
                 <th colspan="4" class="text-start">مجموع</th>
                 <td>
                     {{thousandSeparator(items.reduce((p, c) => p + Math.ceil((c.count || 1) * (c.price || 0)), 0) || 0)}}
@@ -83,10 +90,13 @@
             </tr>
             </tfoot>
         </table>
-        <div class="mt-5 text-center d-print-none">
+        <div class="mt-5 text-center d-print-none" v-if="mode === 'form'">
             <hr/>
             <button class="btn btn-primary" @click="addNewItem">
                 افزودن سطر جدید
+            </button>
+            <button class="btn btn-warning ms-2" @click="mode = 'print'">
+                چاپ
             </button>
         </div>
         <hr/>
@@ -103,14 +113,15 @@
     function onVueLoad() {
         const app = Vue.createApp({
             data: () => ({
-                items: [{count: 1}]
+                items: [{count: 1}],
+                mode: 'form'
             }),
             methods: {
                 addNewItem() {
                     this.items.push({count: 1});
                 },
                 thousandSeparator(input) {
-                    return input.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                    return (input || '0').toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 }
             }
         });
