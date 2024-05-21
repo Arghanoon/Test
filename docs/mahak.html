@@ -167,7 +167,7 @@
                     const blob = new Blob([JSON.stringify(this.model)], {type: 'application/json'});
                     const a = document.createElement('a');
                     a.href = URL.createObjectURL(blob);
-                    a.download = Date.now() + '.json';
+                    a.download = (this.model.customer ? this.model.customer.replaceAll(/\P{L}+/gu, '-') : Date.now()) + '.json';
                     a.click();
                 },
                 onRestoreInputChanged() {
