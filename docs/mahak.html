@@ -64,8 +64,8 @@
                 <th>مجموع</th>
             </tr>
             </thead>
-            <tbody v-if="items">
-            <tr v-for="(x,k) in items">
+            <tbody v-if="model.items">
+            <tr v-for="(x,k) in model.items">
                 <td @dblclick="removeItem(k)">{{k + 1}}</td>
                 <template v-if="mode === 'form'">
                     <td><input type="text" v-model="x.title" class="text-start"/></td>
@@ -84,7 +84,7 @@
             <tr class="border-top" @click="mode = 'form'">
                 <th colspan="4" class="text-start">مجموع</th>
                 <td>
-                    {{thousandSeparator(items.reduce((p, c) => p + Math.ceil((c.count || 1) * (c.price || 0)), 0) || 0)}}
+                    {{thousandSeparator(model.items.reduce((p, c) => p + Math.ceil((c.count || 1) * (c.price || 0)), 0) || 0)}}
                 </td>
             </tr>
             </tfoot>
@@ -143,18 +143,20 @@
         const app = Vue.createApp({
             data: () => ({
                 fontSize: 16,
-                items: [{count: 1}],
+                model: {
+                    items: [{count: 1}]
+                },
                 mode: 'form'
             }),
             methods: {
                 addNewItem() {
-                    this.items.push({count: 1});
+                    this.model.items.push({count: 1});
                 },
                 thousandSeparator(input) {
                     return (input || '0').toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 },
                 saveForm() {
-                    const blob = new Blob([JSON.stringify(this.items)], {type: 'application/json'});
+                    const blob = new Blob([JSON.stringify(this.model)], {type: 'application/json'});
                     const a = document.createElement('a');
                     a.href = URL.createObjectURL(blob);
                     a.download = Date.now() + '.json';
@@ -164,7 +166,7 @@
                     if (this.$refs.restoreInput.files.length > 0) {
                         const fd = new FileReader();
                         fd.onload = () => {
-                            this.items = JSON.parse(fd.result);
+                            this.model = JSON.parse(fd.result);
                             this.$refs.restoreInput.value = '';
                         };
                         fd.readAsText(this.$refs.restoreInput.files[0]);
@@ -172,7 +174,7 @@
                 },
                 removeItem(k) {
                     if (this.mode === 'form' && confirm('از حذف اطمینان دارید؟')) {
-                        this.items.splice(k, 1);
+                        this.model.items.splice(k, 1);
                     }
                 }
             }
