@@ -54,7 +54,15 @@
 <div class="container py-2" id="app-container">
     <div class="text-center" :style="{'font-size' : fontSize + 'px'}">
         <h1>لوازم التحریر ماهک</h1>
-        <table class="invoice">
+
+        <label class="mt-3 d-flex text-start align-items-center" v-if="mode === 'form'">
+            <div class="form-label">خریدار:</div>
+            <input type="text" class="form-control text-start ms-2" v-model="model.customer"/>
+        </label>
+        <div v-else class="text-start">
+            <b>خریدار:</b> <span class="ms-2 d-inline-block">{{model.customer}}</span>
+        </div>
+        <table class="invoice mt-3">
             <thead>
             <tr>
                 <th>ردیف</th>
@@ -124,14 +132,14 @@
                     <td dir="ltr" class="text-end">@mahaktahrir</td>
                 </tr>
                 <tr>
+                    <td>تلگرام</td>
+                    <td dir="ltr" class="text-end">@maahaktahrir</td>
+                </tr>
+                <tr>
                     <td colspan="2" class="text-center border-top">
                         استان گیلان، شهر رودسر، لوازم التحریر ماهک<br/>
                         <span class="fw-bolder">سید محمدی</span>
                     </td>
-                </tr>
-                <tr>
-                    <td>تلگرام</td>
-                    <td dir="ltr" class="text-end">@maahaktahrir</td>
                 </tr>
                 </tbody>
             </table>
