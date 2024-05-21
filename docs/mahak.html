@@ -52,7 +52,7 @@
 </head>
 <body>
 <div class="container py-2" id="app-container">
-    <div class="text-center">
+    <div class="text-center" :style="{'font-size' : fontSize + 'px'}">
         <h1>لوازم التحریر ماهک</h1>
         <table class="invoice">
             <thead>
@@ -91,6 +91,12 @@
         </table>
         <div class="mt-5 text-center d-print-none" v-if="mode === 'form'">
             <hr/>
+            <div class="input-group">
+                <div class="input-group-text">اندازه فونت</div>
+                <input type="number" class="form-control" v-model="fontSize"/>
+                {{fontSize}}
+            </div>
+            <hr/>
             <button class="btn btn-primary" @click="addNewItem">
                 افزودن سطر جدید
             </button>
@@ -106,10 +112,6 @@
             <table class="mx-auto">
                 <tbody class="text-start">
                 <tr>
-                    <td>تلگرام</td>
-                    <td dir="ltr" class="text-end">@maahaktahrir</td>
-                </tr>
-                <tr>
                     <td>اینستاگرام</td>
                     <td dir="ltr" class="text-end">@mahaktahrir</td>
                 </tr>
@@ -123,6 +125,10 @@
                         <span class="fw-bolder">سید محمدی</span>
                     </td>
                 </tr>
+                <tr>
+                    <td>تلگرام</td>
+                    <td dir="ltr" class="text-end">@maahaktahrir</td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -132,6 +138,7 @@
     function onVueLoad() {
         const app = Vue.createApp({
             data: () => ({
+                fontSize: 16,
                 items: [{count: 1}],
                 mode: 'form'
             }),
@@ -156,7 +163,7 @@
                 }
             }
         });
-        app.mount('#app-container')
+        app.mount('#app-container');
     }
 </script>
 <!--<script src="https://unpkg.com/vue@3/dist/vue.global.js" async onload="onVueLoad()"></script>-->
