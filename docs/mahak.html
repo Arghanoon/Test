@@ -24,16 +24,16 @@
             font-family: 'font', Arial;
         }
 
-        table {
+        table.invoice {
             width: 100%
         }
 
-        th {
+        table.invoice th {
             font-size: 1rem;
             font-weight: bold;
         }
 
-        td {
+        table.invoice td {
             border: thin solid;
         }
 
@@ -53,9 +53,8 @@
 <body>
 <div class="container py-2" id="app-container">
     <div class="text-center">
-        <div>لوازم التحریر</div>
-        <h1>ماهک</h1>
-        <table>
+        <h1>لوازم التحریر ماهک</h1>
+        <table class="invoice">
             <thead>
             <tr>
                 <th>ردیف</th>
@@ -104,11 +103,28 @@
         </div>
         <hr/>
         <div class="mt-4 text-center">
-            نوشت افزار و اسباب بازی<br/>
-            پیام به ادمین: @mahak_tahrir<br/>
-            آدرس: گیلان، رودسر (سیدمحمدی)<br/>
-            تلفن: ۰۹۳۷۸۱۰۲۷۱۷<br/>
-            پیج اینستاگرام: mahaktahrir@<br/>
+            <table class="mx-auto">
+                <tbody class="text-start">
+                <tr>
+                    <td>تلگرام</td>
+                    <td dir="ltr" class="text-end">@maahaktahrir</td>
+                </tr>
+                <tr>
+                    <td>اینستاگرام</td>
+                    <td dir="ltr" class="text-end">@mahaktahrir</td>
+                </tr>
+                <tr>
+                    <td>روبیکا</td>
+                    <td dir="ltr" class="text-end">@mahaktahrir</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center border-top">
+                        استان گیلان، شهر رودسر، لوازم التحریر ماهک<br/>
+                        <span class="fw-bolder">سید محمدی</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
