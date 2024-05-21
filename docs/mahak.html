@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -28,6 +28,17 @@
             font-size: 1rem;
             font-weight: bold;
         }
+
+        input {
+            width: 100%;
+        }
+
+        @media print {
+            input {
+                border: none;
+                background: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -43,11 +54,27 @@
                 <th>قیمت</th>
             </tr>
             </thead>
+            <tbody v-if="items">
+            <tr v-for="(x,k) in items">
+                <td>{{k + 1}}</td>
+                <td><input type="text" v-model="x.title"/></td>
+                <td><input type="tel" v-model="x.price"/></td>
+            </tr>
+            </tbody>
         </table>
-        <div class="mt-3 text-center">
+        <div class="mt-3 text-center d-print-none">
+            <hr/>
             <button class="btn btn-primary" @click="addNewItem">
                 افزودن سطر جدید
             </button>
+        </div>
+        <hr/>
+        <div class="mt-4 text-center">
+            نوشت افزار و اسباب بازی<br/>
+            پیام به ادمین: @mahak_tahrir<br/>
+            آدرس: گیلان، رودسر (سیدمحمدی)<br/>
+            تلفن: ۰۹۳۷۸۱۰۲۷۱۷<br/>
+            پیج اینستاگرام: mahaktahrir@<br/>
         </div>
     </div>
 </div>
@@ -55,11 +82,11 @@
     function onVueLoad() {
         const app = Vue.createApp({
             data: () => ({
-                items: {}
+                items: [{}]
             }),
             methods: {
                 addNewItem() {
-                    items.push({});
+                    this.items.push({});
                 }
             }
         });
