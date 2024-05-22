@@ -43,6 +43,10 @@
         }
 
         @media print {
+            .container {
+                max-width: none !important;
+            }
+
             input {
                 border: none;
                 background: none;
@@ -81,7 +85,7 @@
                     <td><input type="tel" v-model="x.price"/></td>
                 </template>
                 <template v-if="mode === 'print'">
-                    <td>{{x.title}}</td>
+                    <td class="text-start">{{x.title}}</td>
                     <td>{{thousandSeparator(x.count)}}</td>
                     <td>{{thousandSeparator(x.price)}}</td>
                 </template>
