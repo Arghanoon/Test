@@ -147,6 +147,11 @@
     </div>
 </div>
 <script>
+    window.addEventListener('beforeunload', e => {
+        e.preventDefault();
+        e.returnValue = true;
+    })
+
     function onVueLoad() {
         const app = Vue.createApp({
             data: () => ({
