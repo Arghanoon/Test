@@ -167,13 +167,13 @@ and website stability.
 **Achievements:** Implemented a user-friendly request system, enhancing communication and operational efficiency for
 Ajotech.
 
-## Ermaطب Website Design and Development
+## Ermateb Website Design and Development
 
 **Duration:**  Ongoing (Started 2019)
 
-**Client:**  Ermaطب
+**Client:**  Ermateb
 
-**Project Description:** Designed, developed, and maintain the Ermaطب website, ensuring its stability and functionality.
+**Project Description:** Designed, developed, and maintain the Ermateb website, ensuring its stability and functionality.
 
 **Technologies:** PHP, MySQL, HTML5, CSS3, Bootstrap, JQuery, JavaScript, VueJS
 
@@ -192,13 +192,13 @@ professional and user-friendly experience.
 
 **Achievements:** Created a visually appealing and informative website that reflects Dr. Jafari's professional identity.
 
-## Kolachai Municipality Website
+## Kelachai Municipality Website
 
 **Duration:** 3 Months (2020)
 
-**Client:**  Kolachai Municipality
+**Client:**  Kelachai Municipality
 
-**Project Description:** Designed and developed the backend of the Kolachai Municipality website, integrating it with a
+**Project Description:** Designed and developed the backend of the Kelachai Municipality website, integrating it with a
 pre-designed theme.
 
 **Technologies:** C#, ASP.NET Core 6, MS SQL Server, HTML5, CSS3, Bootstrap 5, JQuery, JavaScript, VueJS
