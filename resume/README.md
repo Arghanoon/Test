@@ -128,17 +128,11 @@ improving the website's functionality and reliability.
 
 **Duration:** 2 Months (2018)
 
-**Client:**  [Client Name] (Specify Client if possible)
-
 **Project Description:** Developed software for managing real estate and land records, improving efficiency in property
 tracking and transactions.
 
 **Technologies:** C#, ASP Core, SQL Server, CSS3, Bootstrap, JQuery, JavaScript, ReactJs
 
-*
-
-
-**Achievements:** [If applicable, describe specific accomplishments related to the software's features or impact on client operations.]
 
 ## Gilani Kar Website Technical Support
 
@@ -209,8 +203,6 @@ the municipality.
 ## Building Management Software (Security)
 
 **Duration:** 3 Months (2021)
-
-**Client:**  [Client Name] (Specify Client if possible)
 
 **Project Description:** Developed software for managing security personnel in power plants, including entry and exit
 tracking, attendance monitoring, and other security-related functions.
