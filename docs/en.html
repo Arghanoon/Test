@@ -27,6 +27,7 @@
         <div>I'm</div>
         <h1 class="title">Mahdi Hasanpour</h1>
         <div>Full-Stack Web Developer</div>
+        <div id="intro-text-typer" class="caret-container"></div>
     </header>
 </div>
 <div id="about-me" class="container mt-5">
@@ -50,5 +51,25 @@
     </p>
 
 </div>
+
+<script>
+    function caretAnimation(element, strings, index = 0, writeSpeed = 95, delay = 1000) {
+
+        element.textContent = '';
+        const string = strings[index];
+        let strIndex = 0;
+        const interval = setInterval(() => {
+            if (string && strIndex < string.length) {
+                element.textContent += string[strIndex++]
+            } else {
+                clearInterval(interval);
+                setTimeout(() => caretAnimation(element, strings,
+                    index >= (strings.length - 1) ? 0 : index + 1, writeSpeed, delay), delay);
+            }
+        }, writeSpeed)
+    }
+
+    caretAnimation(document.getElementById('intro-text-typer'), ['C# programmer', 'PHP Programmer'])
+</script>
 </body>
 </html>
