@@ -27,10 +27,15 @@
         <div>I'm</div>
         <h1 class="title">Mahdi Hasanpour</h1>
         <div>Full-Stack Web Developer</div>
-        <div id="intro-text-typer" class="caret-container"></div>
+        <code id="intro-text-typer" class="caret-container"></code>
+        <div class="mt-4">
+            <a href="#about-me" class="btn btn-outline-danger">
+                About me
+            </a>
+        </div>
     </header>
 </div>
-<div id="about-me" class="container mt-5">
+<div id="about-me" class="container py-5 min-vh-100">
     <h2>About Me</h2>
     <p>
         A highly proficient and experienced Senior Web Application Developer with a strong foundation in .NET and PHP,
@@ -53,23 +58,30 @@
 </div>
 
 <script>
-    function caretAnimation(element, strings, index = 0, writeSpeed = 95, delay = 1000) {
-
-        element.textContent = '';
+    function caretAnimation(element, strings, reset = false, writeSpeed = 95, delay = 2000) {
+        const index = parseInt(element.getAttribute('CINDX')) || 0;
+        if (reset)
+            element.textContent = '';
         const string = strings[index];
-        let strIndex = 0;
-        const interval = setInterval(() => {
-            if (string && strIndex < string.length) {
-                element.textContent += string[strIndex++]
-            } else {
-                clearInterval(interval);
-                setTimeout(() => caretAnimation(element, strings,
-                    index >= (strings.length - 1) ? 0 : index + 1, writeSpeed, delay), delay);
-            }
-        }, writeSpeed)
+
+        if (string && element.textContent.length < string.length) {
+            element.textContent += string[element.textContent.length]
+            element.dataset.caretTimeOut = setTimeout(() => caretAnimation(element, strings, false, writeSpeed, delay), writeSpeed);
+        } else {
+            element.setAttribute('CINDX', index >= (strings.length - 1) ? 0 : index + 1);
+            element.dataset.caretTimeOut = setTimeout(() => caretAnimation(element, strings, true, writeSpeed, delay), delay);
+        }
+
     }
 
-    caretAnimation(document.getElementById('intro-text-typer'), ['C# programmer', 'PHP Programmer'])
+    const typer = document.getElementById('intro-text-typer');
+    const skills = [
+        'Full-stack Developer', 'Back-End Developer', 'Front-End developer',
+        '.Net Programmer', 'Web Application Programmer'
+    ];
+    caretAnimation(typer, skills)
+    typer.addEventListener('mouseenter', e => clearTimeout(typer.dataset.caretTimeOut))
+    typer.addEventListener('mouseleave', e => caretAnimation(typer, skills))
 </script>
 </body>
 </html>

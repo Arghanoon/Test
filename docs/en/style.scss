@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&display=swap');
 
+:root, html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Oswald", sans-serif;
 }
@@ -18,5 +22,28 @@ body {
     background: linear-gradient(to right, #ffffff, #dddddd);
     background-clip: text;
     color: transparent;
+  }
+}
+
+.caret-container {
+  cursor: pointer;
+
+  &::before {
+    content: '\003E';
+    padding-right: .5em;
+  }
+
+  &::after {
+    content: '\005F';
+    animation: caretAnimation linear 500ms infinite;
+  }
+}
+
+@keyframes caretAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
