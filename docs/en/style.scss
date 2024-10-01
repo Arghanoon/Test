@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&display=swap');
+
 body {
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  font-family: "Oswald", sans-serif;
+}
+
+
+#intro {
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%) fixed;
+  color: #fefefe;
+  font-family: "JetBrains Mono", monospace;
+  min-height: 100vh;
+  padding-block: 2rem;
+  align-content: center;
+
+  .title {
+    background: linear-gradient(to right, #ffffff, #dddddd);
+    background-clip: text;
+    color: transparent;
+  }
 }
