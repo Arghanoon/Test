@@ -10,12 +10,16 @@ body {
 
 
 #intro {
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%) fixed;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-attachment: fixed;
+  background-size: 300% 300%;
+  background-position: left 0% top 0%;
   color: #fefefe;
   font-family: "JetBrains Mono", monospace;
   min-height: 100vh;
   padding-block: 2rem;
   align-content: center;
+  animation: introBackground infinite alternate-reverse ease 2500ms;
 
   .title {
     font-size: 3rem;
@@ -36,6 +40,15 @@ body {
   &::after {
     content: '\005F';
     animation: caretAnimation linear 500ms infinite;
+  }
+}
+
+@keyframes introBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 10% 10%;
   }
 }
 
