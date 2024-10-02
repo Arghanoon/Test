@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&display=swap');
 
-$colors: ('bright-cyan' : #8CF1F1, 'dark-cyan' : #108282);
+$colors: ('bright-cyan' : #8CF1F1, 'dark-cyan' : #108282, 'magenta' : #E617E6);
 :root, html {
   scroll-behavior: smooth;
   --color-bright-cyan: #8CF1F1;
@@ -66,6 +66,20 @@ img {
     position: absolute;
     inset: 0;
     z-index: -1;
+  }
+}
+
+#my-experiences {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("images/my-experience-background.png") no-repeat center fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.21;
   }
 }
 
