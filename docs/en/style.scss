@@ -14,9 +14,9 @@ img {
 }
 
 #intro {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #29323cfe 0%, #485563dd 100%), url('/en/images/Snap.png');
   background-attachment: fixed;
-  background-size: 300% 300%;
+  background-size: 300% 300%, 100% 100%;
   background-position: left 0% top 0%;
   color: #fefefe;
   font-family: "JetBrains Mono", monospace;
@@ -31,6 +31,10 @@ img {
     background-clip: text;
     color: transparent;
   }
+
+  .my-class-image {
+    filter: drop-shadow(.2em .2em .5em #00000099);
+  }
 }
 
 .caret-container {
@@ -43,20 +47,20 @@ img {
 
   &::after {
     content: '\005F';
-    animation: caretAnimation linear 500ms infinite;
+    animation: fadeIn linear 500ms infinite;
   }
 }
 
 @keyframes introBackground {
   0% {
-    background-position: 0 0;
+    background-position: 0 0, center;
   }
   100% {
-    background-position: 10% 10%;
+    background-position: 10% 10%, center;
   }
 }
 
-@keyframes caretAnimation {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
