@@ -16,6 +16,15 @@ img {
   max-height: 100%;
 }
 
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 #intro {
   background-image: linear-gradient(60deg, #29323cfe 0%, #485563dd 100%), url('/en/images/Snap.png');
   background-attachment: fixed;
@@ -80,6 +89,21 @@ img {
     background-size: cover;
     z-index: -1;
     opacity: 0.21;
+  }
+}
+
+#experience-items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3 ) - .5rem);
+  grid-gap: .5rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: both mandatory;
+  @extend .hide-scrollbar;
+
+  > * {
+    scroll-snap-align: start;
   }
 }
 
