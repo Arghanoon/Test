@@ -58,6 +58,7 @@ img {
     content: '';
     opacity: 0.15;
     background-image: url('/en/images/whoAmI.webp');
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 150% 150%;
     background-position: var(--bcX) var(--bcY);
