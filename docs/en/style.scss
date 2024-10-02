@@ -51,6 +51,8 @@ img {
 
 #about-me {
   position: relative;
+  --bcX: 50%;
+  --bcY: 50%;
 
   &::before {
     content: '';
@@ -58,6 +60,8 @@ img {
     background-image: url('/en/images/whoAmI.webp');
     background-repeat: no-repeat;
     background-size: 150% 150%;
+    background-position: var(--bcX) var(--bcY);
+    transition: 300ms linear;
     position: absolute;
     inset: 0;
     z-index: -1;

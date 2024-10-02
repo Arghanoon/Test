@@ -115,6 +115,14 @@
     caretAnimation(typer, skills)
     typer.addEventListener('mouseenter', e => clearTimeout(typer.dataset.caretTimeOut))
     typer.addEventListener('mouseleave', e => caretAnimation(typer, skills))
+    const aboutMe = document.getElementById('about-me');
+    const aboutMeRect = aboutMe.getBoundingClientRect();
+    aboutMe.addEventListener('mousemove', e => {
+        const Xratio = ((aboutMeRect.width / 2) - (e.clientX - aboutMeRect.left)) / 100;
+        const Yratio = ((aboutMeRect.height / 2) - (e.clientY - aboutMeRect.top)) / 100;
+        aboutMe.style.setProperty('--bcX', `${50 + Xratio}%`);
+        aboutMe.style.setProperty('--bcY', `${50 + Yratio}%`);
+    })
 </script>
 </body>
 </html>
