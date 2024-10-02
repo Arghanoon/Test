@@ -179,6 +179,12 @@ img {
   }
 }
 
+#contact-us {
+  min-height: 50vh;
+  background: #29323c;
+  color: #ffffff;
+}
+
 @each $n, $c in $colors {
   .text-#{$n} {
     color: #{$c};
