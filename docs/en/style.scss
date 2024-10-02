@@ -202,3 +202,10 @@ img {
     opacity: 1;
   }
 }
+
+@media (min-width: 1024px) {
+  #languages-and-frameworks {
+    column-count: 2;
+    column-gap: .5rem;
+  }
+}
