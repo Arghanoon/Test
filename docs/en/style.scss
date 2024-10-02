@@ -95,15 +95,31 @@ img {
 #experience-items {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3 ) - .5rem);
-  grid-gap: .5rem;
+  grid-auto-columns: calc((100% / 3) - .1rem);
+  grid-gap: 1rem;
   overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: both mandatory;
   @extend .hide-scrollbar;
+  padding: 1rem;
 
-  > * {
+  .item {
     scroll-snap-align: start;
+    background: #ffffff;
+    border-radius: .5rem;
+    overflow: hidden;
+    padding: .5rem;
+    box-shadow: .1rem .1rem .3rem #00000059;
+    font-size: .9rem;
+
+    .title {
+      font-weight: bolder;
+      margin-bottom: 1rem;
+    }
+
+    .duration {
+      font-size: .7em;
+    }
   }
 }
 

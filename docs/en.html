@@ -119,13 +119,11 @@
 
                 </div>
                 <template id="experience-item">
-                    <div class="card">
-                        <div class="card-header">[title]</div>
-                        <div class="card-body">
-                            <time>[duration]</time>
-                            <p>[description]</p>
-                            <ul class="technologies"></ul>
-                        </div>
+                    <div class="item">
+                        <div class="title">[title]</div>
+                        <time class="duration">[duration]</time>
+                        <p class="description">[description]</p>
+                        <ul class="technologies"></ul>
                     </div>
                 </template>
             </div>
@@ -174,7 +172,7 @@
                 const template = document.getElementById('experience-item');
                 j.forEach(i => {
                     const item = template.content.cloneNode(true);
-                    const div = item.querySelector('.card')
+                    const div = item.querySelector('.item')
                     div.innerHTML = div.innerHTML.replaceAll(/\[(?<k>.*)?\]/g, rpc => {
                         const key = rpc.replaceAll(/\P{L}/ug, '');
                         return i[key] || '';
