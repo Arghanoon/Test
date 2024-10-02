@@ -159,6 +159,26 @@ img {
   animation: fadeIn 1.3s ease-in;
 }
 
+.text-justify {
+  text-align: justify;
+  text-justify: distribute;
+}
+
+#more-about-me {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    background: url('/en/images/more-about-me.png') no-repeat center fixed;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+  }
+}
+
 @each $n, $c in $colors {
   .text-#{$n} {
     color: #{$c};
