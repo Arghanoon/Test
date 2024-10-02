@@ -1,0 +1,291 @@
+[
+  {
+    "title": "Attendance and Shift Management Software",
+    "duration": "6 Months (2009-2010)",
+    "client": "Heshmat Hospital, Rasht",
+    "description": "Developed software to track nurses' attendance, calculate work hours, and manage shifts, enabling accurate payroll and overtime calculations.",
+    "technologies": [
+      "C#",
+      "Windows Forms .NET",
+      "SQL Server"
+    ],
+    "achievements": "Successfully implemented the software as a pilot project at Heshmat Hospital, improving efficiency and accuracy in payroll management."
+  },
+  {
+    "title": "Asset Management Software",
+    "duration": "5 Months (2010)",
+    "client": "Poyesh Higher Education Institute, Qom",
+    "description": "Developed a comprehensive asset management software for administrative and non-administrative items, including inventory tracking, location recording, depreciation calculations, and more.",
+    "technologies": [
+      "C#",
+      "Windows Forms .NET",
+      "SQL Server"
+    ],
+    "achievements": "Streamlined the institute's asset management process, reducing manual effort and improving accountability."
+  },
+  {
+    "title": "Payroll Management Software",
+    "duration": "3 Months (2010)",
+    "client": "Roudsar Municipality, Gilan",
+    "description": "Developed software to manage various payroll-related tasks for the municipality, including invoice processing, calculations, and reporting.",
+    "technologies": [
+      "C#",
+      "Windows Forms .NET",
+      "SQL Server"
+    ],
+    "achievements": "Automated payroll processes for the municipality, improving efficiency and accuracy in financial management."
+  },
+  {
+    "title": "Education Management Software",
+    "duration": "19 Months (2012-2013)",
+    "client": "Poyesh Higher Education Institute, Qom",
+    "description": "Developed a comprehensive education management software for scheduling academic semesters, assigning classes, allocating instructors, and managing other university-related tasks.",
+    "technologies": [
+      "C#",
+      "Windows Forms .NET",
+      "SQL Server"
+    ],
+    "achievements": "Streamlined the institute's academic management process, enhancing student and instructor experience and optimizing resource allocation."
+  },
+  {
+    "title": "Faculty Attendance Software",
+    "duration": "3 Months (2014)",
+    "client": "Poyesh Higher Education Institute, Qom",
+    "description": "Developed software to track faculty attendance for each class, recording entry and exit times, temporary departures, and generating reports for payroll purposes.",
+    "technologies": [
+      "C#",
+      "WPF",
+      "SQL Server"
+    ],
+    "achievements": "Improved faculty attendance tracking for the university, ensuring accurate payroll calculations and promoting timely attendance reporting."
+  },
+  {
+    "title": "Auto Clinic E-Commerce Website",
+    "duration": "6 Months (2015-2016)",
+    "client": "Auto Clinic",
+    "description": "Developed an e-commerce website for selling automotive parts, including oil and other consumables, as well as offering on-site services such as oil changes, mechanic services, car washes, and detailing.",
+    "technologies": [
+      "C#",
+      "ASP.NET MVC",
+      "SQL Server",
+      "HTML5",
+      "CSS3",
+      "JQuery",
+      "JavaScript"
+    ],
+    "achievements": "Developed a user-friendly online platform, expanding the reach of Auto Clinic and increasing sales."
+  },
+  {
+    "title": "Shams Gallery E-Commerce Website",
+    "duration": "3 Months (2015)",
+    "client": "Shams Gallery",
+    "description": "Developed an e-commerce website for selling decorative and luxury items, implementing a responsive design for optimal user experience across devices.",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "JQuery",
+      "JavaScript"
+    ],
+    "achievements": "Created a visually appealing and easy-to-navigate website, enhancing the brand image and expanding the customer base of Shams Gallery."
+  },
+  {
+    "title": "Istabna Rasekh Company Website",
+    "duration": "3 Months (2016)",
+    "client": "Istabna Rasakh Company",
+    "description": "Developed a system for registering and selling building materials, featuring user-friendly interfaces and seamless integration with inventory management.",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "JQuery",
+      "JavaScript",
+      "AngularJS"
+    ],
+    "achievements": "Streamlined the building material ordering process, facilitating efficient sales operations for Istabna Rasakh Company."
+  },
+  {
+    "title": "Dr. Mofred Website Technical Support",
+    "duration": "16 Months (2017-2018)",
+    "client": "Dr. Mofred",
+    "description": "Provided technical support for Dr. Mofred's website, including resolving general issues, enhancing performance, and adding features to the dashboard and public areas.",
+    "technologies": [
+      "C#",
+      "ASP.NET MVC",
+      "SQL Server",
+      "CSS3",
+      "JQuery",
+      "JavaScript",
+      "ReactJs"
+    ],
+    "achievements": "Ensured a smooth user experience for website visitors and provided ongoing support for Dr. Mofred, improving the website's functionality and reliability."
+  },
+  {
+    "title": "Real Estate and Land Management Software",
+    "duration": "2 Months (2018)",
+    "client": null,
+    "description": "Developed software for managing real estate and land records, improving efficiency in property tracking and transactions.",
+    "technologies": [
+      "C#",
+      "ASP Core",
+      "SQL Server",
+      "CSS3",
+      "Bootstrap",
+      "JQuery",
+      "JavaScript",
+      "ReactJs"
+    ],
+    "achievements": null
+  },
+  {
+    "title": "Gilani Kar Website Technical Support",
+    "duration": "8 Months (2018)",
+    "client": "Gilani Kar",
+    "description": "Provided technical support for Gilani Kar's website, including resolving general issues, enhancing performance, and adding features to the dashboard and public areas.",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "JQuery",
+      "JavaScript",
+      "VueJS"
+    ],
+    "achievements": "Improved the website's functionality and user experience for Gilani Kar, ensuring smooth operation and website stability."
+  },
+  {
+    "title": "Ajotech Website Backend Development",
+    "duration": "1 Month (2019)",
+    "client": "Ajotech",
+    "description": "Developed a system for managing requests and creating a related dashboard for Ajotech's website.",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "JQuery",
+      "JavaScript",
+      "VueJS"
+    ],
+    "achievements": "Implemented a user-friendly request system, enhancing communication and operational efficiency for Ajotech."
+  },
+  {
+    "title": "Ermateb Website Design and Development",
+    "duration": "Ongoing (Started 2019)",
+    "client": "Ermateb",
+    "description": "Designed, developed, and maintain the Ermateb website, ensuring its stability and functionality.",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "JQuery",
+      "JavaScript",
+      "VueJS"
+    ],
+    "achievements": "Developed a robust and user-friendly website, enhancing the online presence of Ermateb."
+  },
+  {
+    "title": "Dr. Armin Jafari Website",
+    "duration": "3 Weeks (2020)",
+    "client": "Dr. Armin Jafari",
+    "description": "Designed a custom WordPress theme for Dr. Armin Jafari's personal website, emphasizing a professional and user-friendly experience.",
+    "technologies": [
+      "WordPress Theme",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "JQuery",
+      "JavaScript",
+      "VueJS"
+    ],
+    "achievements": "Created a visually appealing and informative website that reflects Dr. Jafari's professional identity."
+  },
+  {
+    "title": "Kelachai Municipality Website",
+    "duration": "3 Months (2020)",
+    "client": "Kelachai Municipality",
+    "description": "Designed and developed the backend of the Kelachai Municipality website, integrating it with a pre-designed theme.",
+    "technologies": [
+      "C#",
+      "ASP.NET Core 6",
+      "MS SQL Server",
+      "HTML5",
+      "CSS3",
+      "Bootstrap 5",
+      "JQuery",
+      "JavaScript",
+      "VueJS"
+    ],
+    "achievements": "Developed a functional backend for the website, facilitating communication and service delivery for the municipality."
+  },
+  {
+    "title": "Building Management Software (Security)",
+    "duration": "3 Months (2021)",
+    "client": null,
+    "description": "Developed software for managing security personnel in power plants, including entry and exit tracking, attendance monitoring, and other security-related functions.",
+    "technologies": [
+      "C#",
+      "ASP.NET Core 6",
+      "MS SQL Server",
+      "HTML5",
+      "CSS3",
+      "Bootstrap 5",
+      "JQuery",
+      "JavaScript",
+      "VueJS"
+    ],
+    "achievements": null
+  },
+  {
+    "title": "Faraind Powder Website Technical Support",
+    "duration": "Ongoing (Started September 2022)",
+    "client": "Faraind Powder",
+    "description": "Provide ongoing technical support for Faraind Powder's website, resolving issues and adding features as requested.",
+    "technologies": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "Bootstrap"
+    ],
+    "achievements": null
+  },
+  {
+    "title": "DenaGen Tajehiz Website Technical Support",
+    "duration": "Ongoing (Started November 2022)",
+    "client": "DenaGen Tajehiz",
+    "description": "Provide technical support for the DenaGen Tajehiz website, showcasing laboratory products and equipment.",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "WordPress"
+    ],
+    "achievements": null
+  },
+  {
+    "title": "DenaGen Tajehiz Website Development",
+    "duration": "Spring 2023",
+    "client": "DenaGen Tajehiz",
+    "description": "Designed and developed a new website for DenaGen Tajehiz, serving as an e-commerce platform and news source for laboratory equipment.",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "JQuery",
+      "Javascript",
+      "VueJS"
+    ],
+    "achievements": null
+  }
+]

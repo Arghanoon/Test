@@ -114,6 +114,21 @@
                     ASP.NET Core, SQL Server, PHP, MySQL, VueJS, and ReactJS.
                 </p>
             </div>
+            <div class="col-sm-8 mt-4">
+                <div id="experience-items">
+
+                </div>
+                <template id="experience-item">
+                    <div class="card">
+                        <div class="card-header">[title]</div>
+                        <div class="card-body">
+                            <time>[duration]</time>
+                            <p>[description]</p>
+                            <ul class="technologies"></ul>
+                        </div>
+                    </div>
+                </template>
+            </div>
         </div>
     </div>
 </div>
@@ -150,7 +165,27 @@
         const Yratio = ((aboutMeRect.height / 2) - (e.clientY - aboutMeRect.top)) / 100;
         aboutMe.style.setProperty('--bcX', `${50 + Xratio}%`);
         aboutMe.style.setProperty('--bcY', `${50 + Yratio}%`);
-    })
+    });
+
+    function loadExperiences() {
+        fetch('/experience.json').then(r => {
+            r.json().then(j => {
+                const container = document.getElementById('experience-items');
+                const template = document.getElementById('experience-item');
+                j.forEach(i => {
+                    const item = template.content.cloneNode(true);
+                    const div = item.querySelector('.card')
+                    div.innerHTML = div.innerHTML.replaceAll(/\[(?<k>.*)?\]/g, rpc => {
+                        const key = rpc.replaceAll(/\P{L}/ug, '');
+                        return i[key] || '';
+                    });
+                    container.append(item);
+                })
+            })
+        })
+    }
+
+    loadExperiences();
 </script>
 </body>
 </html>
