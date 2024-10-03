@@ -116,6 +116,12 @@ img {
       color: var(--bs-code-color);
     }
 
+    .client {
+      font-weight: bolder;
+      font-size: .7rem;
+      color: map-get($colors, 'dark-cyan');
+    }
+
     .description {
       font-family: "Afacad Flux", sans-serif;
       margin-top: .5rem;
@@ -220,7 +226,7 @@ img {
     }
   }
 
-  .copyright{
+  .copyright {
     font-family: "Afacad Flux", sans-serif;
     font-size: .7rem;
     text-align: center;
