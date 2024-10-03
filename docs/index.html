@@ -357,7 +357,7 @@
             r.json().then(j => {
                 const container = document.getElementById('experience-items');
                 const template = document.getElementById('experience-item');
-                j.forEach(i => {
+                j.reverse().forEach(i => {
                     const item = template.content.cloneNode(true);
                     const div = item.querySelector('.item')
                     div.innerHTML = div.innerHTML.replaceAll(/\[(?<k>.*)?\]/g, rpc => {
