@@ -189,14 +189,7 @@ img {
   }
 
   .icon {
-    display: inline-block;
-    width: 1.5rem;
-    aspect-ratio: 1/1;
-    padding: .2rem;
-    object-fit: contain;
-    object-position: center;
-    background: #fefefe;
-    border-radius: 50%;
+
   }
 
   .social-link {
@@ -205,8 +198,25 @@ img {
     text-align: center;
 
     .icon {
+      display: inline-block;
       width: 2rem;
+      aspect-ratio: 1/1;
+      padding: .2rem;
+      object-fit: contain;
+      object-position: center;
+      background: #fefefe;
+      border-radius: 50%;
       vertical-align: middle;
+      box-shadow: 0 0.05rem .2rem #00000099, 0 0.06rem .3rem #00000055 inset;
+      border: thin solid transparent;
+      transition: 300ms;
+    }
+
+    &:hover {
+      .icon {
+        box-shadow: 0 0.01rem .8rem #000000ee;
+        border: thin solid #ffffff;
+      }
     }
   }
 }
