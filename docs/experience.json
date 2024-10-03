@@ -62,7 +62,7 @@
   {
     "title": "Auto Clinic E-Commerce Website",
     "duration": "6 Months (2015-2016)",
-    "client": "Auto Clinic",
+    "client": null,
     "description": "Developed an e-commerce website for selling automotive parts, including oil and other consumables, as well as offering on-site services such as oil changes, mechanic services, car washes, and detailing.",
     "technologies": [
       "C#",
@@ -78,7 +78,7 @@
   {
     "title": "Shams Gallery E-Commerce Website",
     "duration": "3 Months (2015)",
-    "client": "Shams Gallery",
+    "client": null,
     "description": "Developed an e-commerce website for selling decorative and luxury items, implementing a responsive design for optimal user experience across devices.",
     "technologies": [
       "PHP",
@@ -91,9 +91,9 @@
     "achievements": "Created a visually appealing and easy-to-navigate website, enhancing the brand image and expanding the customer base of Shams Gallery."
   },
   {
-    "title": "Istabna Rasekh Company Website",
+    "title": "Ista Bana Rasekh Company Website",
     "duration": "3 Months (2016)",
-    "client": "Istabna Rasakh Company",
+    "client": "Ista Bana Rasekh Company",
     "description": "Developed a system for registering and selling building materials, featuring user-friendly interfaces and seamless integration with inventory management.",
     "technologies": [
       "PHP",
@@ -104,7 +104,7 @@
       "JavaScript",
       "AngularJS"
     ],
-    "achievements": "Streamlined the building material ordering process, facilitating efficient sales operations for Istabna Rasakh Company."
+    "achievements": "Streamlined the building material ordering process, facilitating efficient sales operations for Ista Bana Rasakh Company."
   },
   {
     "title": "Dr. Mofred Website Technical Support",
@@ -120,7 +120,7 @@
       "JavaScript",
       "ReactJs"
     ],
-    "achievements": "Ensured a smooth user experience for website visitors and provided ongoing support for Dr. Mofred, improving the website's functionality and reliability."
+    "achievements": "Ensured a smooth user experience for website visitors and provided ongoing support for Dr. Mofred, improving the website's functionality and reliability.",
   },
   {
     "title": "Real Estate and Land Management Software",
@@ -142,7 +142,7 @@
   {
     "title": "Gilani Kar Website Technical Support",
     "duration": "8 Months (2018)",
-    "client": "Gilani Kar",
+    "client": "Asare Pardaz Somam Company, Gilan",
     "description": "Provided technical support for Gilani Kar's website, including resolving general issues, enhancing performance, and adding features to the dashboard and public areas.",
     "technologies": [
       "PHP",
@@ -157,10 +157,10 @@
     "achievements": "Improved the website's functionality and user experience for Gilani Kar, ensuring smooth operation and website stability."
   },
   {
-    "title": "Ajotech Website Backend Development",
+    "title": "EDUTECH Website Backend Development",
     "duration": "1 Month (2019)",
-    "client": "Ajotech",
-    "description": "Developed a system for managing requests and creating a related dashboard for Ajotech's website.",
+    "client": "EDUTECH Accelerator Group",
+    "description": "Developed a system for managing requests and creating a related dashboard for EDUTECH's website.",
     "technologies": [
       "PHP",
       "MySQL",
@@ -171,7 +171,7 @@
       "JavaScript",
       "VueJS"
     ],
-    "achievements": "Implemented a user-friendly request system, enhancing communication and operational efficiency for Ajotech."
+    "achievements": "Implemented a user-friendly request system, enhancing communication and operational efficiency for EDUTECH."
   },
   {
     "title": "Ermateb Website Design and Development",
