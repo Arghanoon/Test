@@ -219,6 +219,13 @@ img {
       }
     }
   }
+
+  .copyright{
+    font-family: "Afacad Flux", sans-serif;
+    font-size: .7rem;
+    text-align: center;
+    padding: .5rem;
+  }
 }
 
 @each $n, $c in $colors {
