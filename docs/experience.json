@@ -176,7 +176,7 @@
   {
     "title": "Ermateb Website Design and Development",
     "duration": "Ongoing (Started 2019)",
-    "client": "Ermateb",
+    "client": "Ermateb international medical tourism group",
     "description": "Designed, developed, and maintain the Ermateb website, ensuring its stability and functionality.",
     "technologies": [
       "PHP",
@@ -188,7 +188,8 @@
       "JavaScript",
       "VueJS"
     ],
-    "achievements": "Developed a robust and user-friendly website, enhancing the online presence of Ermateb."
+    "achievements": "Developed a robust and user-friendly website, enhancing the online presence of Ermateb.",
+    "url": "https://en.ermateb.com/"
   },
   {
     "title": "Dr. Armin Jafari Website",
@@ -254,12 +255,13 @@
       "MySQL",
       "Bootstrap"
     ],
-    "achievements": null
+    "achievements": null,
+    "url": "https://farayandpowder.com/"
   },
   {
     "title": "DenaGene Tajehiz Website Technical Support",
     "duration": "Ongoing (Started November 2022)",
-    "client": "DenaGene Tajehiz",
+    "client": "Denagen Tajhiz cellular & molecular devices.",
     "description": "Provide technical support for the DenaGene Tajehiz website, showcasing laboratory products and equipment.",
     "technologies": [
       "PHP",
@@ -269,12 +271,13 @@
       "Bootstrap",
       "WordPress"
     ],
-    "achievements": null
+    "achievements": null,
+    "url": "https://denagene.com/"
   },
   {
     "title": "DenaGene Tajehiz Website Development",
     "duration": "Spring 2023",
-    "client": "DenaGene Tajehiz",
+    "client": "Denagen Tajhiz cellular & molecular devices.",
     "description": "Designed and developed a new website for DenaGene Tajehiz, serving as an e-commerce platform and news source for laboratory equipment.",
     "technologies": [
       "PHP",
@@ -286,6 +289,7 @@
       "Javascript",
       "VueJS"
     ],
-    "achievements": null
+    "achievements": null,
+    "url": "https://demo.denagene.com/"
   }
 ]
