@@ -43,6 +43,10 @@ img {
     background-clip: text;
     color: transparent;
   }
+  .caret-container{
+    display: inline-block;
+    min-height: 2.7rem;
+  }
 
   figure {
     img {
@@ -55,6 +59,14 @@ img {
       font-size: .7em;
       opacity: .8;
     }
+  }
+
+  nav{
+    font-size: .8em;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -170,7 +182,7 @@ img {
   text-justify: distribute;
 }
 
-#more-about-me {
+#skills {
   position: relative;
 
   &::before {
