@@ -311,5 +311,24 @@
     ],
     "achievements": null,
     "url": "https://darholding.co/en"
+  },
+  {
+    "title": "Seetopham E-Commerce Website Development",
+    "duration": "Ongoing (Started Spring 2024)",
+    "client": "Seetopham",
+    "description": "Designed and developed a dynamic e-commerce platform for Seetopham, an online clothing retailer, featuring a user-friendly interface for browsing and purchasing fashion products, integrated with secure payment systems and a modern design to enhance user experience.",
+    "technologies": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "JQuery",
+      "Javascript",
+      "VueJS"
+    ],
+    "achievements": null,
+    "url": "https://seetopham.com/en"
   }
 ]
