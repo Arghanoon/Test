@@ -276,11 +276,12 @@
   },
   {
     "title": "DenaGene Tajehiz Website Development",
-    "duration": "Spring 2023",
+    "duration": "Ongoing (Started Spring 2023)",
     "client": "Denagen Tajhiz cellular & molecular devices.",
     "description": "Designed and developed a new website for DenaGene Tajehiz, serving as an e-commerce platform and news source for laboratory equipment.",
     "technologies": [
       "PHP",
+      "Laravel",
       "MySQL",
       "HTML5",
       "CSS3",
@@ -290,6 +291,25 @@
       "VueJS"
     ],
     "achievements": null,
-    "url": "https://demo.denagene.com/"
+    "url": "https://denagene.com/"
+  },
+  {
+    "title": "DAR Holding E-Commerce and Corporate Website Development",
+    "duration": "Ongoing (Started Spring 2024)",
+    "client": "DAR Holding",
+    "description": "Designed and developed a comprehensive website for DAR Holding, featuring an advanced e-commerce platform for trading and showcasing premium products, alongside a corporate section for company news and updates.",
+    "technologies": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "JQuery",
+      "Javascript",
+      "VueJS"
+    ],
+    "achievements": null,
+    "url": "https://darholding.co/en"
   }
 ]
